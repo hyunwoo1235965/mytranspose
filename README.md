@@ -1,33 +1,33 @@
-# Assignment: MyTranspose Function
+# 📂 MyTranspose
 
-## 🔧 Description
+과제의 제출용 GitHub 저장소입니다.  
+`mytranspose` 함수를 직접 구현하고, 다양한 입력에 대해 테스트하며, Git 브랜치를 이용한 버전 관리 및 PR(Pull Request)까지 수행하였습니다.
 
-This repository implements a custom `mytranspose()` function and corresponding test cases using Python `unittest`.
+---
 
-The function supports:
-- NumPy arrays (1D and 2D)
-- Pandas DataFrames
-- PyTorch tensors
-- Python lists (v2 only)
+## 🧩 과제 개요
 
-## 📂 Branches
+### ✅ Assignment 1: 구현 및 테스트
+- `mytranspose.py` 파일에 transpose 함수 구현
+- `testmytranspose.py` 파일에 테스트 케이스 작성 (unittest 모듈 활용)
+- 테스트 대상:
+  - NumPy 행렬
+  - 빈 행렬 (empty matrix)
+  - 벡터 (1차원 배열)
+  - NaN을 포함한 벡터
 
-### `main`
-- Base code and overall setup
-- Contains the full test set with NumPy, DataFrame, and Torch support
+### ✅ Assignment 2: 브랜치 생성 및 PR
+- `main` 브랜치: 최신 버전 포함 (모든 테스트 포함)
+- `v1` 브랜치: **NumPy 행렬 테스트만 포함**
+- `v2` 브랜치: **빈 행렬, 벡터, NaN 포함 테스트**
+- PR(Pull Request) 생성 및 병합:
+  - `main ← v1`
+  - `main ← v2`
+- 모든 PR은 충돌 없이 성공적으로 병합 완료
 
-### `v1` (Team member 1)
-- ✅ **Only tests for NumPy input**
-- Shows basic functionality using numpy arrays (2D, empty, and vector)
+---
 
-### `v2` (Team member 2)
-- ✅ **Extended tests for other types**
-- Includes additional test cases for:
-  - Python `list`
-  - `pandas.DataFrame`
-  - `torch.Tensor`
-
-## 🧪 How to Run Tests
+## 🧪 테스트 실행 방법
 
 ```bash
 python testmytranspose.py
